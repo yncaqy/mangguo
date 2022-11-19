@@ -7,7 +7,7 @@ from django.urls import reverse
 """
 
 
-def enviroment(**options):
+def environment(**options):
     env = Environment(**options)
     env.globals.update({
         'static': staticfiles_storage.url,

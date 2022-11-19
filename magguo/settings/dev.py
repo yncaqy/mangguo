@@ -83,7 +83,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'environment': 'mangguo.utils.jinja2_env.evironment'
+            'environment': 'magguo.utils.jinja2_env.environment'
         },
     },
 ]
@@ -96,8 +96,12 @@ WSGI_APPLICATION = 'magguo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mgdb',
+        'USER': 'yncaqy',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 

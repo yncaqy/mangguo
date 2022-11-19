@@ -1,0 +1,4 @@
+
+
+class Forbbiden(Exception):
+    pass
